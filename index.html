@@ -11,13 +11,19 @@
             background-color: #00ffff; /* Azul neon */
             font-family: Arial, sans-serif;
             color: #ffffff; /* Texto branco */
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
         }
 
         .container {
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            align-items: center; /* Centraliza os itens horizontalmente */
             padding: 20px;
+            width: 100%;
+            max-width: 800px; /* Limita a largura máxima do conteúdo */
         }
 
         .image-box {
@@ -27,8 +33,8 @@
             background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
             padding: 10px;
             border-radius: 10px;
-            width: 80%;
-            max-width: 600px;
+            width: 100%; /* Ocupa toda a largura do container */
+            max-width: 600px; /* Limita a largura máxima */
         }
 
         .image-box img {
@@ -68,7 +74,7 @@
         <!-- Segunda imagem e descrição -->
         <div class="image-box">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRsZVXauNXf-Sb7FQ9ZLTyk23IbReQ1SzJ5Q&s" alt="Imagem 2">
-            <div class="description ">
+            <div class="description">
                 <h2>LEVANTADOR</h2>
                 <p>A posição de levantador pro outro lado e como um maestro em uma orquestra, ele comanda tudo o que vai acontecer com o jogo de seus atacantes.</p>
             </div>
@@ -82,19 +88,24 @@
                 <p>agora o central ele comanda a rede no bloqueio, ao contrario do libero que comnada o fundo ele comanda a frente. Ele costuma a atacar bolas mais rapidas pelo centro da quadra. Ele qando vai para o fundo depois de errar seu saque ele sai de quadra para o libero entrar.</p>
             </div>
         </div>
-     <!-- Quarta imagem e descrição -->
-     <div class="image-box">
-        <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/i3rx7xprewpfjxlwjisv" alt="Imagem 2">
-        <div class="description ">
-            <h2>PONTEIRO</h2>
-            <p>o ponteio ele é quem vai compor a linha de passe junto com o libero e tambem a rede. Existem 2 tipo de ponteiros: ponteiros de força(espeializados em derrubar bolas no ataque) e os ponteiros de composição(ajudam mais o passe e na defesa)</p>
+
+        <!-- Quarta imagem e descrição -->
+        <div class="image-box">
+            <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/i3rx7xprewpfjxlwjisv" alt="Imagem 4">
+            <div class="description">
+                <h2>PONTEIRO</h2>
+                <p>o ponteio ele é quem vai compor a linha de passe junto com o libero e tambem a rede. Existem 2 tipo de ponteiros: ponteiros de força(espeializados em derrubar bolas no ataque) e os ponteiros de composição(ajudam mais o passe e na defesa)</p>
+            </div>
+        </div>
+
+        <!-- Quinta imagem e descrição -->
+        <div class="image-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRSpZA9UhW_aomAHZonFuqgUaPkPxv_8Y2Fw&s" alt="Imagem 5">
+            <div class="description">
+                <h2>OPOSTO</h2>
+                <p>O oposto ele é especializado em atacar. Diferente dos outros ele não compoe a linha de passe, pos isso ele prioriza o ataca e o bloqueia</p>
+            </div>
         </div>
     </div>
- <!-- quinta imagem e descrição -->
- <div class="image-box">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRSpZA9UhW_aomAHZonFuqgUaPkPxv_8Y2Fw&s" alt="Imagem 2">
-    <div class="description ">
-        <h2>OPOSTo</h2>
-        <p>O oposto ele é especializado em atacar. Diferente dos outros ele não compoe a linha de passe, pos isso ele prioriza o ataca e o bloqueia</p>
-    </div>
-</div>
+</body>
+</html>
