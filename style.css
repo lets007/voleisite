@@ -56,6 +56,7 @@ body {
 footer{
     background-color: rgb(104, 97, 97);
     height: 5vh;
+    position: fixed;
 
 }
 
