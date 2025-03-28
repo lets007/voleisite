@@ -1,43 +1,73 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #00ffff;
+    background-color: #00ffff; /* Azul neon */
     font-family: Arial, sans-serif;
-    color: #ffffff;
+    color: #ffffff; /* Texto branco */
     display: flex;
-    flex-direction: column; /* Mude para column */
-    min-height: 100vh;
-    position: relative; /* Adicione isso */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    height: 85vh;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centraliza os itens horizontalmente */
     padding: 20px;
     width: 100%;
-    max-width: 800px;
-    flex: 1; /* Isso faz o container crescer e empurrar o footer para baixo */
-    margin-bottom: 5vh; /* Espaço para o footer */
+    max-width: 800px; /* Limita a largura máxima do conteúdo */
 }
 
-/* REMOVA a classe .rodapesuper (não é necessária) */
+.image-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%; /* Ocupa toda a largura do container */
+    max-width: 600px; /* Limita a largura máxima */
+}
 
-footer {
+.image-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.description {
+    flex: 1;
+}
+
+.description h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.description p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+
+footer{
     background-color: rgb(104, 97, 97);
     height: 5vh;
-    width: 100%; /* Ocupa toda a largura */
-    position: fixed; /* Fixa na parte inferior */
-    bottom: 0; /* Alinha na base */
-    left: 0; /* Garante que comece da esquerda */
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    z-index: 100; /* Garante que fique sobre outros elementos */
+   
+
 }
 
-footer img {
-    width: 50px;
+.rodapesuper{
+    background-color: rgb(104, 97, 97);
+    height: 5vh;
+}
+.imagem img {
+    width: 50px; 
     height: 50px;
-    object-fit: contain;
+
 }
