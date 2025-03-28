@@ -54,19 +54,25 @@ body {
 }
 
 
-footer{
+footer {
     background-color: rgb(104, 97, 97);
     height: 5vh;
+    width: 100%; /* Ocupa toda a largura */
+    position: fixed; /* Fixa na parte inferior */
+    bottom: 0; /* Alinha na base */
+    left: 0; /* Garante que comece da esquerda */
     display: flex;
-   
-
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    z-index: 100; /* Garante que fique sobre outros elementos */
 }
+
 
 .rodapesuper{
     background-color: rgb(104, 97, 97);
     height: 5vh;
 }
-.imagem {
+.imagem img {
     width: 50px; 
     height: 50px;
 
